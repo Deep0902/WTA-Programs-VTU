@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Program 4</title>
+    <style>
+        body{
+            /* background-image: linear-gradient(45deg, #9a9aeb , #a8bfff); */
+            background-color: #c44569;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			
+		}
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var str = prompt("Enter a number or string","");
+
+        if(!(isNaN(str)))
+        {
+            var num, rev=0, remainder;
+            num = parseInt(str);
+
+            while(num!=0)
+            {
+                remainder = num%10;
+                num = parseInt(num/10);
+                rev = rev * 10 + remainder;
+            }
+            alert("Reverse of " +str+ " is "+rev);
+        }
+        else
+        {
+            str = str.toUpperCase();
+            for(var i = 0; i<str.length; i++)
+            {
+                var chr = str.charAt(i);
+                if(chr == 'A' ||chr == 'E' ||chr == 'I' ||chr == 'O' ||chr == 'U' )
+                    break;
+            }
+            if(i < str.length)
+                alert("Position of leftmost vovel is "+(i+1));
+            else    
+                alert("No vovel found in the string");
+        }
+    </script>
+    <h1 style="align-content: center;">End</h1>
+</body>
+</html>

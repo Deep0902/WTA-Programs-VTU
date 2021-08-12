@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <title>Grow & Shrink Text</title>
+  <script>
+    var font = 0,
+      loading;
+    
+
+    function start() {
+      loading = window.setInterval("incr()", 100);
+    }
+
+    function incr() {
+      font = font + 1;
+      display.innerHTML = "TEXT GROWING : " + font + "pt";
+      display.style.fontSize = font + "pt";
+      if (font > 49) {
+        window.clearTimeout(loading);
+        loading = window.setInterval("decr()", 100);
+      }
+      display.style.color = "#c52e2e";
+    }
+
+    function decr() {
+      font = font - 1;
+      display.innerHTML = "TEXT SHRINKING: " + font + "pt";
+      display.style.fontSize = font + "pt";
+      if (font == 5) {
+        window.clearTimeout(loading);
+        loading = window.setInterval("incr()", 100);
+      }
+      display.style.color = "#2e3dc5";
+    }
+  </script>
+</head>
+
+<body style="background: #2ec571; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" onload="start()">
+  <center>
+    <div style="margin-top:250px" id="display"></div>
+  </center>
+</body>
+
+</html>

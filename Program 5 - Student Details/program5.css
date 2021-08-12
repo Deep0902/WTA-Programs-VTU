@@ -1,0 +1,51 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dfe4ea
+    /* background-image: linear-gradient(45deg, #dfe2ea , #98b197); */
+}
+student{
+    display: block;
+    margin-top: 10px;
+    color :#e84118
+}
+usn{    
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #182C61;
+}
+name{
+    font-weight: 600;
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #8c7ae6;
+}
+
+college{
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #B33771;
+}
+
+branch{
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #2f3640;
+}
+
+year{
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #6ab04c;
+}
+
+email{
+    display: block;
+    margin-left: 20px;
+    font-size: 14pt;
+    color: #eb4d4b;
+}
