@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<style>
+			body{
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background-color: #70a1ff;
+			}
 			table, td, th{
-				border: 1px solid black;
-				width: 33%;
+				border: 1px solid #30336b;
+				width: 40%;
 				text-align: center;
 				border-collapse:collapse;
-				background-color:lightblue;
+				background-color: #e66767;
+				
 			}
 			table { margin: auto; }
 		</style>
@@ -16,9 +21,9 @@
 		
 		<?php
 			$servername = "remotemysql.com";
-			$username = "pNNMheyzoE";
-			$password = "U2YYexzYmn";
-			$dbname = "pNNMheyzoE";
+			$username = "yiDxTSfbwL";
+			$password = "IyFDLfBOzJ";
+			$dbname = "yiDxTSfbwL";
 			$a=[];
 			$conn = mysqli_connect($servername, $username, $password, $dbname);
 			if ($conn->connect_error)
@@ -26,7 +31,7 @@
 			$sql = "SELECT * FROM student";
 			$result = $conn->query($sql);
 			echo "<br>";
-			echo "<center> BEFORE SORTING </center>";
+			echo "<center> <strong>BEFORE SORTING</strong> </center>";
 			echo "<table border='2'>";
 				echo "<tr>";
 					echo "<th>USN</th><th>NAME</th><th>Address</th></tr>"; 
@@ -70,7 +75,7 @@
 				}
 			}
 			echo "<br>";
-			echo "<center> AFTER SORTING <center>";
+			echo "<center> <strong>AFTER SORTING </strong><center>";
 			echo "<table border='2'>";
 				echo "<tr>";
 					echo "<th>USN</th><th>NAME</th><th>Address</th></tr>"; 
